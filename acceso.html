@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Fury - Web y Código QR</title>
+    <link rel="stylesheet" href="Styleprincipal.css">
+    <style>
+        /* Estilos específicos optimizados para la sección QR y Acceso */
+        .qr-card {
+            background-color: #101014;
+            border: 1px solid #22222d;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        .qr-image-container {
+            background: #ffffff;
+            padding: 15px;
+            display: inline-block;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(220, 38, 38, 0.2);
+        }
+        .qr-image-container img {
+            width: 180px;
+            height: 180px;
+            display: block;
+        }
+        .link-display {
+            background-color: #17171d;
+            border: 1px dashed #dc2626;
+            padding: 12px 20px;
+            border-radius: 6px;
+            display: inline-block;
+            color: #ffffff;
+            font-family: monospace;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            word-break: break-all;
+        }
+        .action-buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .custom-btn {
+            background-color: #dc2626;
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .custom-btn:hover {
+            background-color: #b91c1c;
+            transform: translateY(-2px);
+        }
+        .custom-btn.secondary {
+            background-color: #27272a;
+        }
+        .custom-btn.secondary:hover {
+            background-color: #3f3f46;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN SUPERIOR SINCRONIZADO -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="Logotipo Esports FANFURY (1).png" alt="Logo Fan Fury" class="nav-logo">
+            <span class="brand-name">FAN FURY</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="fanfuryprincipal.html">Inicio</a></li>
+                <li><a href="prototipo.html">Prototipo</a></li>
+                <li><a href="Quienes.html">Quiénes somos</a></li>
+                <li><a href="servicios.html">Nuestros servicios</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="mitigacion.html">Producto de mitigación</a></li>
+                <li><a href="sustentacion.html">Sustentación</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="acceso.html" class="active">Web / QR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section-container" style="max-width: 900px;">
+        
+        <h2 style="font-size: 1.8rem; color: #ffffff; text-align: center; margin-bottom: 25px; font-weight: 800;">📱 Acceso Oficial y Código QR</h2>
+
+        <!-- SECCIÓN PRINCIPAL DEL CÓDIGO QR -->
+        <div class="qr-card">
+            <h3 style="color: #dc2626; font-size: 1.25rem; margin-bottom: 10px;">⚽ Escanea para visitar nuestra Web</h3>
+            <p style="color: #d4d4d8; font-size: 0.95rem; margin-bottom: 15px; line-height: 1.5;">
+                Usa la cámara de cualquier celular para escanear el código QR y explorar la plataforma digital de FanFury en tiempo real.
+            </p>
+
+            <!-- CÓDIGO QR FUNCIONAL REAL (Generado por API segura) -->
+            <div class="qr-image-container">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://fanfury.github.io" alt="Código QR Fan Fury">
+            </div>
+
+            <div>
+                <div class="link-display">
+                    🔗 https://fanfury.github.io
+                </div>
+            </div>
+
+            <div>
+                <a href="https://fanfury.github.io" target="_blank" class="custom-btn" style="max-width: 250px; margin: 0 auto;">
+                    🌐 Abrir Página Web
+                </a>
+            </div>
+        </div>
+
+        <!-- TARJETAS DE NAVEGACIÓN Y ACCESOS RÁPIDOS -->
+        <div style="background-color: #17171d; border-left: 5px solid #dc2626; padding: 25px; border-radius: 8px; margin-bottom: 30px;">
+            <h3 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 10px;">👥 Conoce más sobre el proyecto</h3>
+            <p style="color: #d4d4d8; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">
+                Navega rápidamente hacia las secciones principales del proyecto escolar desarrollado para promover el barrismo social y la convivencia pacífica.
+            </p>
+            
+           
+        </div>
+
+        <!-- BOTONES DE NAVEGACIÓN INFERIOR SECUENCIAL -->
+        <div style="margin-top: 40px; display: flex; justify-content: space-between;">
+            <a href="equipo.html" class="btn-nav" style="background-color: #27272a; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none;">Equipo</a>
+            <a href="index.html" class="btn-nav" style="background-color: #dc2626; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none;">Inicio 🏠</a>
+        </div>
+    </main>
+
+</body>
+</html>

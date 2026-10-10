@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Geologica", sans-serif;
+    background-image: url('IMG/1.png'); /* Cambia esto por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #1d7ebe;
+    height: 80px; /* Ajustar la altura a un tamaño más delgado */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0;
+    height: 100%; /* Asegúrate de que tome toda la altura del contenedor */
+    line-height: 5px; /* Ajusta este valor para centrar el texto verticalmente */
+}
+
+.logo img {
+    width: 250px; /* Ajusta el ancho del logo */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+nav {
+    flex-grow: 1;
+    position: relative; /* Añadir posición relativa para el menú */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+    align-items: center; /* Centrar verticalmente los elementos del menú */
+    transition: right 0.3s ease; /* Añadir transición */
+}
+
+nav ul li {
+    margin-left: 30px; /* Espaciado entre los elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold; /* Cambiado a 'bold' o podrías usar '700' para negrita */
+    padding: 0 10px;
+    font-size: 20px; /* Ajusta el tamaño del texto de los enlaces */
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto */
+    margin-top: -55px; /* Ajusta este valor para mover los elementos hacia arriba */
+}
+
+nav ul li a:hover {
+    color: #50C878;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    height: auto;
+}
+
+.hero-text h1 {
+    font-size: 48px; /* Tamaño de fuente del título */
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px; /* Espacio entre el título y la imagen */
+    text-align: center;
+}
+
+.hero-image {
+    width: 800px; /* Ancho fijo de 800px */
+    height: 600px; /* Alto fijo de 800px */
+    border-radius: 0%; /* Bordes redondeados */
+    object-fit: cover; /* Mantener la proporción y cubrir el área */
+}
+
+
+.menu-icon {
+    display: none; /* Ocultar el icono del menú por defecto */
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        padding: 40px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 80%; /* Mantener la proporción en pantallas pequeñas */
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 80px;
+        right: -100%; /* Mover el menú hacia la derecha */
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #2E86C1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #1d7ebe; /* Mismo color que el header */
+    color: white; /* Texto en blanco */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre las secciones */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.footer-section {
+    flex: 1; /* Cada sección toma el mismo espacio */
+    margin: 0 20px; /* Espaciado entre secciones */
+}
+
+.footer-section h3 {
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.footer-section p {
+    color: white; /* Texto blanco */
+    margin: 5px 0; /* Margen vertical para los párrafos */
+}
+
+.footer-bottom {
+    text-align: center; /* Centrar el contenido inferior */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    border-top: 1px solid #fff; /* Línea superior */
+}
+
+.footer-bottom p {
+    margin: 10px 0; /* Margen vertical */
+}
+
+.socials {
+    margin-top: 10px; /* Espacio superior */
+}
+
+.socials a {
+    color: white; /* Enlaces en blanco */
+    margin: 0 10px; /* Espacio entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.socials a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Estilo para el botón de Presupuesto */
+.budget-button {
+    display: inline-block; /* Para que se comporte como un bloque */
+    background-color: #50C878; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    margin-top: 10px; /* Espacio superior */
+    transition: background-color 0.3s ease; /* Transición para el hover */
+}
+
+.budget-button:hover {
+    background-color: #094a70; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Apilar secciones en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+}

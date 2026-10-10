@@ -1,0 +1,146 @@
+/* Importación de la fuente Roboto */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #5DADE2;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #F7F7F7;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F7F7F7;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #154360;
+}
+
+/* Fondo específico para la página de inicio */
+.home-bg {
+    background-color: #F7F7F7;
+    background-image: linear-gradient(120deg, #5DADE2 30%, #F7F7F7 100%);
+}
+
+/* Fondo específico para la página de servicios */
+.services-bg {
+    background-color: #F7F7F7;
+    background-image: linear-gradient(120deg, #154360 30%, #F7F7F7 100%);
+}
+
+/* Sección hero */
+.hero {
+    background-color: #154360;
+    color: #F7F7F7;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #5DADE2;
+    color: #F7F7F7;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #F7F7F7;
+    color: #154360;
+}
+
+/* Estilo para las características en la página principal */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #F7F7F7;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #154360;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Sección de servicios */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    color: #154360;
+}
+
+.services p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services ul li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #5DADE2;
+    color: #F7F7F7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}

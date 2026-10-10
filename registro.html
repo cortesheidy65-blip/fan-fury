@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Fury - Registro e ingreso de usuarios</title>
+    <link rel="stylesheet" href="Styleprincipal.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="Logotipo Esports FANFURY (1).png" alt="Logo Fan Fury" class="nav-logo">
+            <span class="brand-name">FAN FURY</span>
+        </div>
+       <nav class="nav-menu">
+            <ul>
+                <li><a href="fanfuryprincipal.html">Inicio</a></li>
+                <li><a href="prototipo.html">Prototipo</a></li>
+                <li><a href="Quienes.html">Quiénes somos</a></li>
+                <li><a href="servicios.html">Nuestros servicios</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="mitigacion.html">Producto de mitigación</a></li>
+                <li><a href="sustentacion.html">Sustentación</a></li>
+                 <li><a href="Usuarios.html">Usuarios</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="acceso.html">Web QR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section-container" style="max-width: 550px;">
+        <h2 style="font-size: 1.8rem; color: #ffffff; text-align: center; margin-bottom: 25px; font-weight: 800;">Registro e ingreso de usuarios</h2>
+        
+        <form id="registroForm" onsubmit="event.preventDefault(); alert('¡Registro exitoso! Bienvenido a la comunidad Fan Fury.'); window.location.href='usuarios.html';" style="display: flex; flex-direction: column; gap: 18px;">
+            
+            <div style="display: flex; flex-direction: column; text-align: left; gap: 6px;">
+                <label style="color: #ffffff; font-weight: 600; font-size: 0.95rem;">Nombre completo:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre completo" required style="padding: 12px 15px; border-radius: 8px; border: 1px solid #27272a; background: #17171d; color: #fff; font-size: 0.95rem; outline: none;">
+            </div>
+
+            <div style="display: flex; flex-direction: column; text-align: left; gap: 6px;">
+                <label style="color: #ffffff; font-weight: 600; font-size: 0.95rem;">Correo electrónico:</label>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com" required style="padding: 12px 15px; border-radius: 8px; border: 1px solid #27272a; background: #17171d; color: #fff; font-size: 0.95rem; outline: none;">
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-top: 15px;">
+                <button type="submit" class="btn-nav" style="flex: 2; background-color: #dc2626; color: #ffffff; padding: 12px; border: none; border-radius: 22px; font-weight: bold; cursor: pointer; font-size: 1rem; text-align: center;">
+                    Registrarse
+                </button>
+                <a href="usuarios.html" class="btn-nav" style="flex: 1; background-color: #27272a; color: #ffffff; padding: 12px; border-radius: 22px; font-weight: bold; text-decoration: none; font-size: 1rem; text-align: center; line-height: normal;">
+                    Volver
+                </a>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>
